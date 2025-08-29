@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Быстрые переводы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-left">
+      <h1>Совершай быстрые переводы</h1>
+      <p>Простые действия для сложных процессов:</p>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Страна отправителя:</label>
+          <select class="mm"><option> Польша</option></select>
+        </div>
+        <div class="field">
+          <label>Страна получателя:</label>
+          <select class="mmm"><option >Россия</option></select> 
+       
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Хочу перевести:</label>
+          <input type="number" class="mmmm" placeholder="0.00">
+        </div>
+        <div class="field">
+          <label>Хочу получить:</label>
+          <input  class="mmmm" type="number" placeholder="0.00" >
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Валюта перевода:</label>
+          <select class="mmmmm"><option>RUB</option></select>
+        </div>
+        <div class="field">
+          <label>Валюта получения:</label>
+          <select class="mmmmm"><option>RUB</option></select>
+        </div>
+      </div>
+      <div class="ff">
+        <div class="tooltip">
+          <img src="./Info Circle.png" alt="">
+          <span class="tooltiptext">
+            Указано примерное время, поскольку мы не можем влиять на скорость работы сервисов перевода
+          </span>
+        </div>
+        <p class="note">Ориентировочное время перевода: <span class="time">от 30 минут</span></p>
+      </div>
+      
+   
+    </div>
+  <div class="form-right">
+  <div class="form-content">
+    <p>Оставьте свои данные, чтобы мы могли связаться <br/> <span class="sentr">с вами и завершить процесс перевода:</span></p>
+    <form id="contactForm">
+      <label for="name">Имя:*</label>
+      <input id="name" type="text" placeholder="Введите ваше имя" required>
+  
+      <label for="contact">Email или Telegram:*</label>
+      <input id="contact" type="text" placeholder="Введите предпочитаемый способ связи" required>
+  
+      <label for="comment">Комментарий:</label>
+      <textarea id="comment" placeholder="Введите ваш комментарий..."></textarea>
+  
+      <button type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+    </form>
+  </div>
+  
+  <div class="success-message" style="display: none;">
+    <img src="./Tick Square.png" alt="">
+    <p style="font-size: 24px;">Ваш запрос принят!</p>
+    <p style="font-size: 16px;">Мы свяжемся с вами по указанному способу связи <br/>в ближайшее время либо вы можете перейти сразу <br/>к диалогу с нашей поддержкой</p>
+    <button id="supportBtn" >СВЯЗАТЬСЯ С ПОДДЕРЖКОЙ</button>
+  </div>
+  
+  <div class="contact-methods" style="display: none;">
+    <img src="./Chat.png" alt="">
+    <p style="font-size: 24px;">Выберите удобный способ связи</p>
+    <p style="font-size: 16px;">Диалог будет продолжен в выбранном мессендежере</p>
+     <button id="supportBtnn">
+    <img src="./аапва.png" alt="Facebook" class="contact-icon">
+    СВЯЗАТЬСЯ С FACEBOOK
+  </button>
+  
+  <button  id="supportBtnn">
+    <img src="./whatsapp-whats-app-svgrepo-com (1) 1.png" alt="WhatsApp"class="contact-icon" >
+    СВЯЗАТЬСЯ С WHATSAPP
+  </button>
+  
+  <button  id="supportBtnn">
+    <img  class="teleg" src="./Frame 1726.png" alt="Telegram" >
+    
+  </button>
+    
+  </div>
+</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
